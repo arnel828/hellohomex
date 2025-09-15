@@ -30,3 +30,34 @@ a {
 .animate-spin-slow {
   animation: spin-slow 10s linear infinite; /* Adjust duration as needed */
 }
+
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s forwards;
+}
