@@ -1,0 +1,13 @@
+/* No custom styles for App.css, using Tailwind CSS */
+
+.clip-path-initial {
+  clip-path: circle(100% at 50% 50%); /* Start with the image fully visible */
+}
+
+.clip-path-final {
+  clip-path: circle(24.3% at 51% 35%);
+}
+
+.transition-clip-path {
+  transition: clip-path 1s ease-out;
+}
