@@ -5,7 +5,7 @@
 }
 
 .clip-path-final {
-  clip-path: circle(24.3% at 51% 35%);
+  clip-path: circle(75px at 50.3% 32.5%); /* Adjusted for 150px diameter circle */
 }
 
 .transition-clip-path {
