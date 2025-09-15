@@ -1,11 +1,11 @@
 /* No custom styles for App.css, using Tailwind CSS */
 
 .clip-path-initial {
-  clip-path: circle(100% at 50% 50%); /* Start with the image fully visible */
+  clip-path: circle(100px at 50% 50%); /* Initial size for 200px diameter image */
 }
 
 .clip-path-final {
-  clip-path: circle(75px at 50.3% 32.5%); /* Adjusted for 150px diameter circle */
+  clip-path: circle(70px at 50% 50%); /* Final size for 140px diameter image */
 }
 
 .transition-clip-path {

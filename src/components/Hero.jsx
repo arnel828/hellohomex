@@ -1,16 +1,23 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ clipPathApplied }) => {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-200px)] text-center px-4 pt-20"> {/* Adjusted min-h and added pt-20 */}
-      <div className="relative flex items-center justify-center mb-8 gap-[50px]">
-        <h1 className="custom-text-108px font-light text-black leading-tight">Rebalance</h1>
+      <div className="relative flex items-center justify-center mb-20 gap-[50px]">
+        <h1 className="text-[68px] font-light text-black leading-tight">Rebalance</h1>
         <div className="relative w-[200px] h-[200px] mx-8 flex items-center justify-center"> {/* Increased size for rotating image */}
-          <img src="/img/66eae22e9496687fc2f910cb_cta circle text.svg" alt="Talk to our climate experts" className="absolute inset-0 w-full h-full object-cover rounded-full animate-spin-slow" />
+          <img src="/img/66eae22e9496687fc2f910cb_cta circle text.svg" alt="Talk to our climate experts" className="animate-spin-slow absolute inset-0 w-[200px] h-[200px] object-cover rounded-full z-20" />
+       <img
+        src="/img/66eb4fe26bacf86c07f72402_cta img.avif"
+        alt="CTA Image"
+        className={`absolute inset-0 m-auto w-full h-full object-cover z-10 transition-clip-path duration-1000 ease-out ${
+          clipPathApplied ? 'clip-path-final' : 'clip-path-initial'
+        }`}
+      />
         </div>
-        <h1 className="custom-text-108px font-light text-black leading-tight">the planet</h1>
+        <h1 className="text-[70px] font-light text-black leading-tight">the planet</h1>
       </div>
-      <p className="text-2xl text-black mb-4">Patch helps you</p>
+      <p className="text-[40px] text-black mb-4">Patch helps you</p>
       <div className="border border-gray-300 rounded-full py-2 px-6 mb-8">
         <span className="text-2xl text-black">accelerate climate solutions</span>
       </div>
