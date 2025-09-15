@@ -23,7 +23,7 @@ function App() {
           clipPathApplied ? 'clip-path-final' : 'clip-path-initial'
         }`}
       />
-      <div className="max-w-[1140px] mx-auto mt-[100px]"> {/* Adjust mt value as needed based on actual Navbar height + 40px margin */}
+      <div className="max-w-[1140px] mx-auto"> {/* Adjust mt value as needed based on actual Navbar height + 40px margin */}
         {/* Other content can go here */}
       </div>
     </div>

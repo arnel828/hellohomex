@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ({ showNavbar }) => {
   return (
-    <nav className={`bg-white z-40 fixed top-0 left-1/2 -translate-x-1/2 max-w-[1140px] w-full mt-10 transition-opacity duration-500 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
+    <nav className={`bg-white mt-[40px] z-40 fixed top-0 left-1/2 -translate-x-1/2 max-w-[1140px] w-full mt-10 transition-opacity duration-500 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
       <div className="w-full mx-auto flex justify-between items-center px-[20px] py-[2px] my-8 border border-gray-300 rounded-[10px] shadow-sm">
         <div className="flex items-center">
           <img src="/img/67a3aa96c2bd17fa14da2a3e_Logo.svg" alt="Patch Logo" className="h-8 mr-2" />
